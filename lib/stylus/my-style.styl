@@ -1,0 +1,400 @@
+@import 'normalize.styl'
+
+/*Paleta de Colores*/
+$relax_oro = #b60050
+$relax_azul = #00457C
+$relax_oro = #ED9512
+$gris = #d1d1d1
+$negro-ox = #333
+$blanco = #fff
+$naranja = #FF7F31
+$rosa = #F44CA6
+
+$url-relax = "http://www.revistarelax.com/images/"
+
+
+/* Fuentes */
+@font-face
+	font-family 'Montserrat-Regular'
+	src url(../fonts/Montserrat-Regular.ttf) format('truetype')
+
+@font-face
+	font-family 'Oxygen-Regular'
+	src url(../fonts/Oxygen-Regular.ttf) format('truetype')
+
+/* Inicia Estilo */
+html,body
+	background #fff
+	font-size 16px
+	font-family 'Oxygen-Regular'   
+
+body a
+	transition 0.5s all
+	-webkit-transition 0.5s all
+	-o-transition 0.5s all
+	-moz-transition 0.5s all
+	-ms-transition 0.5s all
+
+h1,h2,h3,h4,h5,h6,label,p
+	margin 0
+
+ul
+	padding 0
+	margin 0
+	list-style none
+
+/*---- Header ---*/
+header
+	width 100%
+	height 110px
+	background-color $relax_azul
+	
+/*-- Navegacion --*/
+.pull
+	display none
+
+.navigation
+	background-color black
+	display fixed
+	top 0px
+
+nav ul
+	padding 0px
+	margin 20px 0px
+
+.navigation nav ul li
+	text-transform uppercase
+	text-align center
+
+.navigation nav ul li a
+	color white
+	font-size  1.8rem !important
+	font-family 'Oxygen-Regular'
+	font-weight 400
+	transition all 0.5s ease
+	-moz-transition all 0.5s ease
+	-webkit-transition all 0.5s ease
+	-o-transition all 0.5s ease
+	display block
+
+.navigation nav ul li a:hover  
+	color $relax_oro
+	background-color $gris
+	text-decoration none
+	font-weight 700
+
+/*-- Cabecera --*/
+.title
+	font-size 1.3rem
+	text-align center
+	margin 0px auto
+	font-family 'Montserrat-Regular'
+	color white
+.logo
+	margin 10px 0px
+	text-align center
+	
+.logo img
+	width 40%
+
+.nav_slide_button, .nav_slide_button a, .nav_slide_button a:visited
+	color $relax_oro
+	position absolute
+	top 30px
+	right 10px
+
+.nav_slide_button a:hover
+	color white
+
+.magazine-button
+	color $relax_oro
+	position absolute
+	top 55px
+	left 30px
+
+/*--- Slider --*/
+.slider 
+	position relative
+	background-color $gris
+	height 220px
+
+.rslides 
+	position relative
+	list-style none
+	overflow hidden
+	width 100%
+	height 220px
+	padding 0
+	margin 0
+	z-index 100
+
+.rslides li 
+	-webkit-backface-visibility hidden
+	position absolute
+	display none
+	width 100%
+	height 220px
+	left 0
+	top 0
+
+.rslides lifirst-child 
+	position relative
+	display block
+	float left
+
+.rslides img 
+	display block
+	float left
+	width 100%
+	border 0
+
+.callbacks_tabs a:after 
+	content "\f111"
+	font-size 0
+	font-family FontAwesome
+	visibility visible
+	display block
+	height 12px
+	width 12px
+	display inline-block
+	background $relax_azul
+	border-radius 50px
+
+.callbacks_here a:after
+	background white
+
+.callbacks_tabs a
+	visibility hidden
+
+.callbacks_tabs li
+	display inline-block
+
+ul.callbacks_tabs.callbacks1_tabs 
+	position absolute
+	bottom 10px
+	z-index 999
+	right 5%
+
+.caption
+	position absolute
+	bottom 0px
+	left 10%
+	color $relax_azul
+	margin-top -10px
+
+.caption h3
+	font-size 1.5rem
+	display inline-block
+	font-family 'Montserrat-Regular'
+
+.caption h3 span
+	border-bottom 2px solid $relax_oro
+	text-transform uppercase
+
+.caption p
+	font-size 1rem
+	margin-top -5px
+
+.banner1
+	background url($url-relax slide/slide-A.png) no-repeat
+	margin-bottom 50px
+	width 100%
+	min-height 550px
+	background-size 100% 30%
+	-webkit-background-size 100% 30%
+	-moz-background-size 100% 30%
+	-o-background-size 100% 30%
+
+.banner2
+	background url($url-relax slide/slide-B.png) no-repeat
+	margin-bottom 50px
+	width 100%
+	min-height 550px
+	background-size 100% 30%
+	-webkit-background-size 100% 30%
+	-moz-background-size 100% 30%
+	-o-background-size 100% 30%
+
+.banner3
+	background url($url-relax slide/slide-C.png) no-repeat
+	margin-bottom 50px
+	width 100%
+	min-height 550px
+	background-size 100% 30%
+	-webkit-background-size 100% 30%
+	-moz-background-size 100% 30%
+	-o-background-size 100% 30%
+
+.banner4
+	background url($url-relax slide/slide-D.png) no-repeat
+	margin-bottom 50px
+	width 100%
+	min-height 550px
+	background-size 100% 30%
+	-webkit-background-size 100% 30%
+	-moz-background-size 100% 30%
+	-o-background-size 100% 30%
+
+.banner5
+	background url($url-relax slide/slide-E.png) no-repeat
+	margin-bottom 50px
+	width 100%
+	min-height 550px
+	background-size 100% 30%
+	-webkit-background-size 100% 30%
+	-moz-background-size 100% 30%
+	-o-background-size 100% 30%
+
+/* Botonera */
+.bottom-header
+	position relative
+	padding-right 10px
+	padding-left 10px
+  	min-height 49px
+	
+.header-bottom
+	background-color #fff
+	position absolute
+	z-index 1000
+	top -24px
+	width 100%
+	box-shadow 0 0 4px rgba(164,164,164,.5)
+
+.bottom-head
+	text-align center
+	border-right 1px solid #EBEBEB
+	padding 0
+	float left
+	width 11%
+	
+	& a
+		text-decoration none
+		display block
+		height 70px
+		position relative
+		transition 0.5s all
+		-webkit-transition 0.5s all
+		-o-transition 0.5s all
+		-moz-transition 0.5s all
+		-ms-transition 0.5s all
+	
+	& h6
+		display none
+		/*
+		font-size 1em
+		color #919090
+		font-family 'Montserrat-Regular'
+		margin 0.5em 0 0
+		*/
+.bottom-head:nth-child(7)
+	border-right none
+
+.bottom-head a:hover .buy-media
+	height 50px
+	padding 14px 2px
+	transition 0.5s all
+	-webkit-transition 0.5s all
+	-o-transition 0.5s all
+	-moz-transition 0.5s all
+	-ms-transition 0.5s all
+	width 100%
+	background-color #fff
+	position absolute
+	bottom 0
+	left 0
+
+.bottom-head a:hover
+	color #27da93
+
+.bottom-header
+	position relative
+
+.bottom-head a:hover .buy-media
+	height 100px
+
+.buy-media
+	position absolute
+	bottom 0
+	height 50px
+	padding 14px 2px
+	overflow hidden
+	width 100%
+	background-color #fff
+	-webkit-transform translate3d(0, 0, 0)
+	transform translate3d(0, 0, 0)
+	-webkit-transition -webkit-transform .2s ease,height .2s ease
+	-moz-transition -moz-transform .2s ease,height .2s ease
+	-o-transition -o-transform .2s ease,height .2s ease
+	transition transform .2s ease,height .2s ease
+
+i.buy
+	width 32px
+	height 32px
+	background url(../images/img-sprite.png) no-repeat -2px -28px
+	display block
+	margin 0 auto
+
+i.rent
+	width 32px
+	height 32px
+	background url(../images/img-sprite.png) no-repeat -28px -28px
+	display block
+	margin 0 auto
+
+i.pg
+	width 32px
+	height 32px
+	background url(../images/img-sprite.png) no-repeat -52px -28px
+	display block
+	margin 0 auto
+
+i.sell
+	width 32px
+	height 32px
+	background url(../images/img-sprite.png) no-repeat -102px -28px 
+	display block
+	margin 0 auto
+
+i.loan
+	width 32px
+	height 32px
+	background url(../images/img-sprite.png) no-repeat -128px -28px
+	display block
+	margin 0 auto
+
+i.apart
+	width 32px
+	height 32px
+	background url(../images/img-sprite.png) no-repeat -154px -28px 
+	display block
+	margin 0 auto
+
+i.deal
+	width 32px
+	height 32px
+	background url(../images/img-sprite.png) no-repeat -179px -28px 
+	display block
+	margin 0 auto
+	
+
+i.buy,i.rent,i.pg,i.sell,i.loan,i.apart ,i.deal
+	width 22px
+	height 22px
+	background-size 255px
+
+.bottom-head ahover i.buy
+	background-position -2px -60px
+.bottom-head a:hover i.rent
+	background-position -28px -57px 
+.bottom-head a:hover i.pg
+	background-position -52px -57px 
+.bottom-head a:hover i.sell
+	background-position -102px -57px 
+.bottom-head a:hover i.loan
+	background-position -128px -57px 
+.bottom-head a:hover i.apart
+	background-position -154px -55px 
+.bottom-head a:hover i.deal
+	background-position -179px -57px 
+
+    
