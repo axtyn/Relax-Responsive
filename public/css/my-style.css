@@ -426,6 +426,7 @@ ul.callbacks_tabs.callbacks1_tabs {
 /* Botonera */
 .bottom-header {
   position: relative;
+  margin-top: 15px;
   padding-right: 10px;
   padding-left: 10px;
 }
